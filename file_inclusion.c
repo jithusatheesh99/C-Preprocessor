@@ -45,7 +45,6 @@ int process_file(const char *filename, FILE *out)
     FILE *in = fopen(filename, "r");
     if (in == NULL)
         return 0;
-
     char line[MAX_LINE];
     int in_comment = 0;      
 
